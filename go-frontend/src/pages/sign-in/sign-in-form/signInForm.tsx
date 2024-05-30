@@ -3,6 +3,7 @@ import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Button from "@components/button";
 import './signInForm.scss'
 import Input from "@components/input";
+import { Link } from "react-router-dom";
 
 interface SignFormProps {
     submit: (data: FieldValues) => void
@@ -26,6 +27,7 @@ export default function SignInForm(props: SignFormProps) {
 
     return (
         <div className="signInFormContainer">
+            <div className="signInLogo">Welcome back to <span className="signInLogo-up">GO</span></div>
             <form onSubmit={handleSubmit(submit)} className="signInForm">
                 <Input register={register}
                     label='Email'
@@ -42,6 +44,7 @@ export default function SignInForm(props: SignFormProps) {
                 <Button content='Sign In' />
                 {/* {errors.exampleRequired && } */}
             </form>
+            <div>New to GO? <Link to={'/sign-up'}>Create account</Link></div>
         </div>
 
     )
