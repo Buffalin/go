@@ -1,0 +1,23 @@
+.navigationLink {
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 20px;
+    background-color: #faffbe;
+    width: 100%;
+    height: 50px;
+}
+
+li {
+    margin-right: 50px;
+}
