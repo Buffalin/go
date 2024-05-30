@@ -1,0 +1,26 @@
+.signInForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 5px;
+    background: rgb(241, 245, 246);
+    width: 100%;
+}
+
+.signInFormContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 32px;
+}
+
+.signInLogo {
+    font-weight: 700;
+    &-up {
+        font-size: 36px;
+    }
+}

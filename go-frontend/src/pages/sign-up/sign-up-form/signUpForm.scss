@@ -1,0 +1,26 @@
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 5px;
+    background: rgb(241, 245, 246);
+    width: 100%;
+}
+
+.signUpFormContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 32px;
+}
+
+.signUpLogo {
+    font-weight: 700;
+    &-up {
+        font-size: 36px;
+    }
+}
