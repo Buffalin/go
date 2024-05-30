@@ -1,4 +1,4 @@
-# Say welcom to GO :)
+# Say HI to GO :)
 Go is service which will help to many immigrant people to find them self in new country
 
 Based on
