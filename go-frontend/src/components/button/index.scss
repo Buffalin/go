@@ -1,16 +1,13 @@
 .button {
-
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
     
     &-primary {
-        cursor: pointer;
         border: 0.5px solid rgb(255, 255, 255);
-        border-radius: 5px;
         background: rgb(44, 44, 54);
         color: white;
-        padding: 10px;
     }
 
     &-secondary {

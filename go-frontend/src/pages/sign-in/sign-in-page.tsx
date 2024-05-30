@@ -1,11 +1,16 @@
-import SignForm from "../../components/sign-form/signForm";
+
+import { FieldValues } from 'react-hook-form';
 import './index.scss'
+import SignInForm from "./sign-in-form/signInForm";
 
 export default function SignInPage() {
     
+    function logIn(data: FieldValues) {
+        console.log(data)
+    }
     return (
         <div className="sign-page">
-            <SignForm type="sign-in"/>
+            <SignInForm submit={logIn} />
         </div>
     )
 }

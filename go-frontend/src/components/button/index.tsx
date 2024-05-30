@@ -8,7 +8,7 @@ interface ButtonProps {
 export default function Button({styleType = 'primary', content}: ButtonProps) {
     
     return (
-        <button className={`button-${styleType}`}>
+        <button className={`button button-${styleType}`}>
             <div>
                 <span>{content}</span>
             </div>
