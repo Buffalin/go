@@ -3,7 +3,6 @@ import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Button from "@components/button";
 import './signUpForm.scss'
 import Input from "@components/input";
-import Box from "@/components/box";
 import { Link } from "react-router-dom";
 
 interface SignFormProps {
@@ -30,20 +29,26 @@ export default function SignUpForm(props: SignFormProps) {
         <div className="signUpFormContainer">
             <div className="signUpLogo">Lets <span className="signUpLogo-up">GO</span> with us!</div>
             <form onSubmit={handleSubmit(submit)} className="signUpForm">
-                <Box gap='30px' style={{ padding: '0px', alignContent: 'space-between' }}>
+                <div className="signUpInputWrapper">
                     <Input register={register}
                         label='Name'
                         showLabel={true}
                         type="text"
                         required={true}
-                        styleType="secondary" />
+                        styleType="secondary"
+                        style={{
+                            minWidth: '178px'
+                        }} />
                     <Input register={register}
                         label='Last Name'
                         showLabel={true}
                         type="text"
                         required={true}
-                        styleType="secondary" />
-                </Box>
+                        styleType="secondary"
+                        style={{
+                            minWidth: '178px'
+                        }} />
+                </div>
                 <Input register={register}
                     label='Email'
                     showLabel={true}

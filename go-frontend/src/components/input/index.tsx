@@ -1,22 +1,22 @@
-
 import './index.scss'
 import { UseFormRegister } from 'react-hook-form';
 
 interface InputProps {
-    styleType?: 'primary' | 'secondary' | 'tertiary';
-    label: string;
-    showLabel?: boolean;
-    type: string;
-    disabled?: boolean;
-    width?: number;
-    height?: number;
-    placeholder?: string;
-    value?: string;
-    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    formValues?: any;
-    register: UseFormRegister<InputProps["formValues"]>;
-    required?: boolean;
+    styleType?: 'primary' | 'secondary' | 'tertiary'
+    label: string
+    showLabel?: boolean
+    type: string
+    disabled?: boolean
+    width?: number
+    height?: number
+    placeholder?: string
+    value?: string
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
+    formValues?: any
+    register: UseFormRegister<InputProps["formValues"]>
+    required?: boolean
     id?: string
+    style?: React.CSSProperties
 }
 
 export default function Input({
@@ -37,6 +37,7 @@ export default function Input({
                 className={`input-${styleType} input`}
                 {...props}
                 {...register(props.label, { required })}
+                style={props.style}
             />
         </div>
 
