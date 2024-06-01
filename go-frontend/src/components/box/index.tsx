@@ -1,7 +1,7 @@
 import './index.scss'
 
 interface BoxProps {
-    flex?: 'column' | 'row',
+    flex?: 'column' | 'row'
     gap?: string
     style?: React.CSSProperties
     children: React.ReactNode[]
