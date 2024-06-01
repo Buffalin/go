@@ -3,6 +3,10 @@
     width: 100%;
     padding: 10px;
     border-radius: 5px;
+
+    &:hover {
+        background: $primary-color-hover;
+    }
     
     &-primary {
         border: none;
