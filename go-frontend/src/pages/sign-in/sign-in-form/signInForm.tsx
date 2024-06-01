@@ -44,7 +44,7 @@ export default function SignInForm(props: SignFormProps) {
                 <Button content='Sign In' />
                 {/* {errors.exampleRequired && } */}
             </form>
-            <div>New to GO? <Link to={'/sign-up'}>Create account</Link></div>
+            <div>New to GO? <Link className="navLink" to={'/sign-up'}>Create account</Link></div>
         </div>
 
     )

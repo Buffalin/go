@@ -11,6 +11,8 @@ interface SignFormProps {
 export default function SignUpForm(props: SignFormProps) {
 
     interface FormValues {
+        name: string;
+        lastName: string;
         email: string;
         password: string;
     }
@@ -61,9 +63,15 @@ export default function SignUpForm(props: SignFormProps) {
                     type="password"
                     required={true}
                     styleType="secondary" />
+                <Input register={register}
+                    label='Confirm password'
+                    showLabel={true}
+                    type="password"
+                    required={true}
+                    styleType="secondary" />
                 <Button content='Sign Up' />
                 {/* {errors.exampleRequired && } */}
-                <div style={{ marginTop: '32px' }}>Already have a GO account? <Link to={'/sign-in'}>Sign In</Link></div>
+                <div style={{ marginTop: '32px' }}>Already have a GO account? <Link className="navLink" to={'/sign-in'}>Sign In</Link></div>
             </form>
         </div>
 
